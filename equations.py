@@ -39,13 +39,3 @@ def calculate (x:float):
     return(ans)
 
 
-print(XtimesY(-2,2))
-print(XtimesY(-2.2, -2))
-print(sqrt(2.5, 4))
-print(exponent(2.5))
-print(ln(1.5))
-print(calculate(1))
-'''x= input ('enter a x :')
-x=float(x)
-print(calculate(x))
-'''
