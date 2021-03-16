@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 def exponent (x:float):
     num_total=0
     for i in range(0,100):
