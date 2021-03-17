@@ -10,7 +10,7 @@ def exponent (x:float):
         num_total=num_total+(num1/num2)
     return(num_total)
 
-def ln (x:float):
+def Ln (x:float):
     if x<=0:
         return 0.0
     num_chek=x-1.0
@@ -21,7 +21,7 @@ def ln (x:float):
     return(num_lan)
     
 def XtimesY (x:float, y:float):
-    ans=exponent(y*ln(x))
+    ans=exponent(y*Ln(x))
     if x<=0:
         return(0.0)
     return(ans)
@@ -36,5 +36,4 @@ def calculate (x:float):
     ans=exponent(x)*XtimesY(7, x)*XtimesY(x, -1)*sqrt(x, x)
     ans=float('%0.6f'% ans)
     return(ans)
-
 
