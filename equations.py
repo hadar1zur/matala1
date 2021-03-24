@@ -1,4 +1,4 @@
-def exponent (x:float):
+def exponent (x:float)->float:
     num_total=0
     for i in range(0,100):
         num1=1
@@ -10,7 +10,7 @@ def exponent (x:float):
         num_total=num_total+(num1/num2)
     return(num_total)
 
-def Ln (x:float):
+def Ln (x:float)->float:
     if x<=0:
         return 0.0
     num_chek=x-1.0
@@ -20,20 +20,19 @@ def Ln (x:float):
         num_lan=num_lan+2*((x-exponent(num_lan))/(x+exponent(num_lan)))
     return(num_lan)
     
-def XtimesY (x:float, y:float):
+def XtimesY (x:float, y:float)->float:
     ans=exponent(y*Ln(x))
     if x<=0:
         return(0.0)
     return(ans)
 
-def sqrt (x:float, y:float):
+def sqrt (x:float, y:float)->float:
     ans=XtimesY(y, 1/x)
     return(ans)
    
-def calculate (x:float):
+def calculate (x:float)->float:
     if x==0:
         return(0.0)
     ans=exponent(x)*XtimesY(7, x)*XtimesY(x, -1)*sqrt(x, x)
     ans=float('%0.6f'% ans)
     return(ans)
-
